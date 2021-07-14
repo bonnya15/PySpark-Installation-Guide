@@ -1,9 +1,10 @@
-# PySpark-Installation-Guide
+## PySpark-Installation-Guide
 Detailed description for installing and using PySpark in windows through Anaconda3 and Jupyter Notebook
 
 
-- First Create a virtual environment in Anaconda3 name it pyspark_env
--- install required packages like, pyspark, py4j etc from Anaconda Navigator 
+## First Create a virtual environment in Anaconda3 name it pyspark_env
+
+# install required packages like, pyspark, py4j etc from Anaconda Navigator 
 
 - Next download spark from this link http://spark.apache.org/downloads.html
 
@@ -14,35 +15,47 @@ Detailed description for installing and using PySpark in windows through Anacond
 - then download and copy paste winutils.exe in the location  C:\data\spark-3.1.2-bin-hadoop3.2\bin
   (Please configure the address as per your system setting)
 
-- then set the system paths and variables. (Most Crucial Part)
+## Set the system paths and variables. (Most Crucial Part)
 
 go to Control Panel --> Systems & Security --> Systems --> Advanced System Settings --> Environment Variables
 
--- under User variables for shiuli Subhra Ghosh 
-     HADOOP_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
-     SPARK_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
-     add a new variable to path to where your java 8 has located 
-     -- path = C:\tmp\java\bin
-     PYSPARK_DRIVER_PYTHON = jupyter
-     PYSPARK_DRIVER_PYTHON_OPTS = notebook
--- under System variables 
-     PYSPARK_PYTHON = C:\Anaconda3\envs\pyspark_env\python.exe  %% the location where you have created the new environment
-     add 3 new paths 
-     -- path = C:\tmp\java\bin
-     -- path = C:\data\spark-3.1.2-bin-hadoop3.2\bin
-     -- path = C:\Anaconda3
+- under User variables for shiuli Subhra Ghosh 
+
+     - HADOOP_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
+     
+     - SPARK_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
+     
+     - add a new variable to path to where your java 8 has located 
+       - path = C:\tmp\java\bin
+      
+     - PYSPARK_DRIVER_PYTHON = jupyter
+    
+     - PYSPARK_DRIVER_PYTHON_OPTS = notebook
+     
+- under System variables 
+
+    - PYSPARK_PYTHON = C:\Anaconda3\envs\pyspark_env\python.exe  %% the location where you have created the new environment
+     
+    - add 3 new paths 
+      - path = C:\tmp\java\bin
+      - path = C:\data\spark-3.1.2-bin-hadoop3.2\bin
+      - path = C:\Anaconda3
 
 Your variable configuration is done 
 
-Now go to Anaconda Prompt
+# Now go to Anaconda Prompt
 
 You need to activate the virtual environment you created through anaconda prompt 
--- conda activate pyspark_env
+
+- conda activate pyspark_env
+
 Then type 
--- pyspark
+
+- pyspark
+
 It will redirect you to jupyter notebook 
 
-for trial write your first spark code... (Name it pyspark_success)
+# for trial write your first spark code... (Name it pyspark_success)
 
 
 - from pyspark.sql import SparkSession
