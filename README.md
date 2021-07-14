@@ -3,7 +3,7 @@ Detailed description for installing and using PySpark in windows through Anacond
 
 
 - First Create a virtual environment in Anaconda3 name it pyspark_env
----- install required packages like, pyspark, py4j etc from Anaconda Navigator 
+-- install required packages like, pyspark, py4j etc from Anaconda Navigator 
 
 - Next download spark from this link http://spark.apache.org/downloads.html
 
@@ -18,14 +18,14 @@ Detailed description for installing and using PySpark in windows through Anacond
 
 go to Control Panel --> Systems & Security --> Systems --> Advanced System Settings --> Environment Variables
 
----- under User variables for shiuli Subhra Ghosh 
+-- under User variables for shiuli Subhra Ghosh 
      HADOOP_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
      SPARK_HOME = C:\data\spark-3.1.2-bin-hadoop3.2
      add a new variable to path to where your java 8 has located 
      -- path = C:\tmp\java\bin
      PYSPARK_DRIVER_PYTHON = jupyter
      PYSPARK_DRIVER_PYTHON_OPTS = notebook
----- under System variables 
+-- under System variables 
      PYSPARK_PYTHON = C:\Anaconda3\envs\pyspark_env\python.exe  %% the location where you have created the new environment
      add 3 new paths 
      -- path = C:\tmp\java\bin
@@ -45,16 +45,16 @@ It will redirect you to jupyter notebook
 for trial write your first spark code... (Name it pyspark_success)
 
 
---- from pyspark.sql import SparkSession
---- sc = SparkContext.getOrCreate()
---- import numpy as np
---- TOTAL = 1000000
---- dots = sc.parallelize([2.0 * np.random.random(2) - 1.0 for i in range(TOTAL)]).cache()
---- print("Number of random points:", dots.count())
+- from pyspark.sql import SparkSession
+- sc = SparkContext.getOrCreate()
+- import numpy as np
+- TOTAL = 1000000
+- dots = sc.parallelize([2.0 * np.random.random(2) - 1.0 for i in range(TOTAL)]).cache()
+- print("Number of random points:", dots.count())
     Number of random points: 1000000
---- stats = dots.stats()
---- print('Mean:', stats.mean())
---- print('stdev:', stats.stdev())
+- stats = dots.stats()
+- print('Mean:', stats.mean())
+- print('stdev:', stats.stdev())
     Mean: [-8.00075967e-04  2.46454177e-05]
     stdev: [0.57701921 0.57738532]  
 
