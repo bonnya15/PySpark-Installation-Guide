@@ -1,10 +1,10 @@
-## PySpark-Installation-Guide
+# PySpark-Installation-Guide
 Detailed description for installing and using PySpark in windows through Anaconda3 and Jupyter Notebook
 
 
-## First Create a virtual environment in Anaconda3 name it pyspark_env
+##  First Create a virtual environment in Anaconda3 name it pyspark_env
 
-# install required packages like, pyspark, py4j etc from Anaconda Navigator 
+- install required packages like, pyspark, py4j etc from Anaconda Navigator 
 
 - Next download spark from this link http://spark.apache.org/downloads.html
 
@@ -43,7 +43,7 @@ go to Control Panel --> Systems & Security --> Systems --> Advanced System Setti
 
 Your variable configuration is done 
 
-# Now go to Anaconda Prompt
+## Now go to Anaconda Prompt
 
 You need to activate the virtual environment you created through anaconda prompt 
 
@@ -55,7 +55,7 @@ Then type
 
 It will redirect you to jupyter notebook 
 
-# for trial write your first spark code... (Name it pyspark_success)
+## for trial write your first spark code... (Name it pyspark_success)
 
 
 - from pyspark.sql import SparkSession
