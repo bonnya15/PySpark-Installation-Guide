@@ -64,11 +64,15 @@ It will redirect you to jupyter notebook
 - TOTAL = 1000000
 - dots = sc.parallelize([2.0 * np.random.random(2) - 1.0 for i in range(TOTAL)]).cache()
 - print("Number of random points:", dots.count())
+
     Number of random points: 1000000
+    
 - stats = dots.stats()
 - print('Mean:', stats.mean())
 - print('stdev:', stats.stdev())
+
     Mean: [-8.00075967e-04  2.46454177e-05]
+    
     stdev: [0.57701921 0.57738532]  
 
 It took me nearly 8 hours to figure out what is happening... Please follow the steps I think you can install it easily. 
